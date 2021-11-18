@@ -1,59 +1,58 @@
 {
-  "name": "milebits/eloquent-filters",
-  "description": "A Laravel PHP library that allows the user to filter the result of Eloquent Model query builders.",
-  "type": "library",
-  "require": {
-    "php": ">=8.0",
-    "laravel/framework": "^6|^7|^8",
-    "milebits/helpers": "^3"
-  },
-  "require-dev": {
-    "facade/ignition": "2.*",
-    "fakerphp/faker": "1.*",
-    "mockery/mockery": "1.*",
-    "nunomaduro/collision": "5.*",
-    "phpunit/phpunit": "9.*"
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true
-  },
-  "license": "GPL-3.0-or-later",
-  "authors": [
-    {
-      "name": "Hicham SADDEK",
-      "email": "h.saddek@serrahub.com",
-      "homepage": "https://linkedin.com/in/hicham-saddek",
-      "role": "Lead Developer"
+    "name": "milebits/eloquent-filters",
+    "description": "A Laravel PHP library that allows the user to filter the result of Eloquent Model query builders.",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "^6|^7|^8",
+        "milebits/helpers": "^3"
     },
-    {
-      "name": "Milebits Systems",
-      "email": "support@milebits.com",
-      "homepage": "https://os.milebits.com",
-      "role": "Project Manager"
+    "require-dev": {
+        "facade/ignition": "2.*",
+        "fakerphp/faker": "1.*",
+        "mockery/mockery": "1.*",
+        "nunomaduro/collision": "5.*",
+        "phpunit/phpunit": "9.*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [{
+            "name": "Hicham SADDEK",
+            "email": "h.saddek@serrahub.com",
+            "homepage": "https://linkedin.com/in/hicham-saddek",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "Milebits Systems",
+            "email": "support@milebits.com",
+            "homepage": "https://os.milebits.com",
+            "role": "Project Manager"
+        }
+    ],
+    "support": {
+        "email": "support@os.milebits.com"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Milebits\\Eloquent\\Filters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Milebits\\Eloquent\\Filters\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milebits\\Eloquent\\Filters\\Providers\\EloquentFiltersServiceProvider"
+            ]
+        }
     }
-  ],
-  "support": {
-    "email": "support@os.milebits.com"
-  },
-  "prefer-stable": true,
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "Milebits\\Eloquent\\Filters\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Milebits\\Eloquent\\Filters\\Tests\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Milebits\\Eloquent\\Filters\\Providers\\EloquentFiltersServiceProvider"
-      ]
-    }
-  }
 }
